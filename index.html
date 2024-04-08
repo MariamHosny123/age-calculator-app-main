@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <script src="https://kit.fontawesome.com/8b1026b911.js" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
    
   <link rel="stylesheet" href="assets/css/style.css">
        <!--Latest compiled and minified CSS     -->
@@ -25,44 +26,51 @@
   </style>
 </head>
 <body>
-  <div class="container m-auto my-5">
 
+
+
+  <div class="container m-auto my-5">
+<form>
     <div class="row g-0 m-5">
       <div class="col-md-3 " >
         <p class="grey_text">Day</p>
-        <input type="text" title="day" class="w-50" name="day" id="day" value="11" >
+        <input type="text" title="day" class="w-50 " name="day" id="day" maxlength="2" pattern="[0-9]{1,2}" placeholder="DD" required>
+        
       </div>  
 
 
       <div class="col-md-3 ">
         <p class="grey_text">Month</p>
-        <input type="text" title="month" class="w-50" name="month" id="month" value="9" >
+        <input placeholder="MM" type="month" title="month" class="w-50" name="month" id="month"  maxlength="2" pattern="[0-9]{1,2}" required>
       </div>
       <div class="col-md-3 ">
         <p class="grey_text"> Year</p> 
-        <input type="text" title="year" class="w-50" name="year" id="year" value="2001" >
+        <input placeholder="YYYY" type="text" title="year" class="w-50" name="year" id="year"  required maxlength="4" >
       </div>
     </div>
-
+  
     <div class="row">
       <div class="col-md-11">
         <hr>
       </div>
       <div class="col-md-1">
-        <img class="purple_text" src="assets/images/icon-arrow.svg" >
+        <button type="button" class="round-btn" onclick="calculateAndDisplayAge()">
+          <img class="purple_text" src="assets/images/icon-arrow.svg" >
+        </button>
+        
       </div>
     </div>
-
+  </form>
     <div class="row p-1 mx-5 ">
-      <p class="black_text"><span class="purple_text">38</span>years</p>
+      <p class="black_text"><span class="purple_text" id="yearValue">--</span> years</p>
     </div>
 
     <div class="row p-1 mx-5">
-      <p class="black_text"><span class="purple_text">52</span>months</p>
+      <p class="black_text"><span class="purple_text" id="monthValue">--</span> months</p>
     </div>
 
     <div class="row p-1 mx-5">
-      <p class="black_text"><span class="purple_text">--</span>days</p>
+      <p class="black_text"><span class="purple_text" id="dayValue">--</span> days</p>
     </div>
 
   </div>
@@ -73,7 +81,9 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Mariam Hosny</a>.
   </div>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

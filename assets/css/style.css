@@ -1,36 +1,32 @@
 @font-face {
-    font-family: 'Poppins';
-    src: url('/assets/fonts/Poppins-Bold.ttf') format('truetype'); /* Specify the path to the font file */
-    font-weight: 400i, 700, 800i; /* Font weight of the regular style */
-    font-style: normal; /* Font style of the regular style */
-  }
+font-family: 'Poppins';
+src: url('/assets/fonts/Poppins-Bold.ttf') format('truetype'); 
+font-weight: 400i, 700, 800i; 
+font-style: normal;
+}
 
 
 body{
-    /* font-size: 32px; */
-    font-family: 'Poppins', sans-serif;
-   background-color:  hsl(0, 0%, 94%);
-
+font-family: 'Poppins', sans-serif;
+background-color:  hsl(0, 0%, 94%);
 }
 
 .container{
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 5px;
+background-color: hsl(0, 0%, 100%);
+border-radius: 5px;
 }
-  
-  /* You can define @font-face rules for other font weights and styles if needed */
-  
+
 .purple_text{
 color: hsl(259, 100%, 65%);
 font-size: 80px;
 }
 .black_text{
-    color: hsl(0, 0%, 8%);
-    font-size: 80px;
+color: hsl(0, 0%, 8%);
+font-size: 80px;
 }
 
 .light_red_text{
-    color:hsl(0, 100%, 67%) ;
+color:hsl(0, 100%, 67%) ;
 }
 
 .grey_text{
@@ -41,23 +37,38 @@ font-size: 15px;
 }
 
 img {
-    border: 15px solid hsl(259, 100%, 65%);
-    
-  width: 70px;
-  height: 71px;
-  background-color: hsl(259, 100%, 65%);
-  margin-top: -26px;
-  border-radius: 50px;
-    }
+border: 15px solid hsl(259, 100%, 65%);
+width: 70px;
+height: 71px;
+background-color: hsl(259, 100%, 65%);  
+border-radius: 50px;
+
+}
+
+.round-btn{
+width: 70px;
+height: 71px;
+margin-top: -26px;
+border-radius: 50px;
+border: none; /* Remove default button border */
+background: none; /* Remove default button background */
+padding: 0; /* Remove default button padding */
+}
+
+img:hover {
+border: 15px solid hsl(0, 0%, 8%);
+background-color: hsl(0, 0%, 8%);  
+
+}
 
 
-  input{
-    height: 55px;
-    border-radius: 5px;
-    font-size: 25px;
-    padding: 20px;
-    
-  } 
+input{
+height: 55px;
+border-radius: 5px;
+font-size: 25px;
+padding: 20px;
+
+} 
 
 /* - White: hsl(0, 0%, 100%) *
 - Off white: hsl(0, 0%, 94%)*
